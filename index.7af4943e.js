@@ -1,0 +1,2 @@
+document.querySelectorAll("li").forEach(function(e){if(e.querySelector("ul")){var t=Array.from(e.childNodes).find(function(e){return e.nodeType===Node.TEXT_NODE});if(t){t.data=t.data.trim();var n=document.createElement("span");n.classList.add("tree__header"),n.append(t),e.prepend(n)}}}),document.querySelector(".tree").addEventListener("click",function(e){var t=e.target.closest(".tree__header");if(t){var n=t.nextElementSibling;n&&("none"!==window.getComputedStyle(n).display?n.style.display="none":n.style.display="block")}});
+//# sourceMappingURL=index.7af4943e.js.map
